@@ -67,7 +67,7 @@ if (opción2==2) {
          alert("Estimado "+ cliente + " Su cuenta es de "+ precio_total + " y se entrega a domicilio en la siguiente dirección "+ dirección );
     }
     if (Opción3==2) {
-        let precio_total= Number(cantidad*(precio)*1.15 + 15).toFixed(2);
+        let precio_total= Number(cantidad*(precio)*1.15).toFixed(2);
           alert("Estimado "+ cliente + " Su cuenta es de "+ precio_total + " y pasa a recoger su pedido");
     }
 
