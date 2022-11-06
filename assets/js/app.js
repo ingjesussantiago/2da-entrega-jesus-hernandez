@@ -1,9 +1,9 @@
 class Hamburguesa {
-    constructor(nombre, ingrediente, precio){
-        this.nombre = nombre
-        this.ingrediente = ingrediente
-        this.precio = precio
-    }
+  constructor(nombre, ingrediente, precio){
+    this.nombre = nombre
+    this.ingrediente = ingrediente
+    this.precio = precio
+  }
 }
 
 const Hamburguesa_clásica = new Hamburguesa("Hamburguesa Clásica","Medallón de Carne, Salchicha, Queso Amarillo, Jamón, Lechuga, Tomate, Cebolla y Chile.", 55);
@@ -11,10 +11,16 @@ const Hamburguesa_Hawaiana = new Hamburguesa("Hamburguesa Hawaiana", "Medallón 
 const Hamburguesa_Especial = new Hamburguesa("Hamburguesa Doble", "Doble Medallón de Carne, Salchicha, Queso Manchego, Queso Amarillo, Tocino, Jamón, Lechuga, Tomate, Cebolla y Chile.",  80);
 
 
-let cliente=prompt("Ingrese su Nombre por favor");
-let dirección=prompt("Ingrese su dirección");
 const añadiendo_productos =[];
 
+let app = document.getElementById("app");
+app.addEventListener("click", pedido)
+
+    function name (params) {
+      let cliente=prompt("Ingrese su Nombre por favor");
+      let dirección=prompt("Ingrese su dirección");
+      
+    }
 
 function pedido() {
   
@@ -27,6 +33,8 @@ function pedido() {
   function solicitar(params) {
     cantidad = prompt("¿Ingrese cantidad de hamburguesas?");
     }
+
+
 
 opción=Number(opción);
 
@@ -69,13 +77,18 @@ if (opción2==2) {
   Opción3= prompt("Solicita Servicio a Domicilio:\n1. si  \n2. No ")
   
   if (Opción3==1) {
+    let cliente=prompt("Ingrese su Nombre por favor");
+    let dirección=prompt("Ingrese su dirección");
+    
     const total = añadiendo_productos.reduce((acumulador, elemento) => acumulador + elemento, 0)
     console.log(total);
-    totalmasiva = total+15
+    totalmasiva = total+15;
+    
     alert("Estimado(a) "+ cliente +" Su cuenta es de "+ totalmasiva + " y se entrega en la siguiente dirección: " + dirección )
     
   }
   if (Opción3==2) {
+    let cliente=prompt("Ingrese su Nombre por favor");
     const total = añadiendo_productos.reduce((acumulador, elemento) => acumulador + elemento, 0)
     console.log(total);
     totalmasiva = total
@@ -91,7 +104,9 @@ if (opción2 == 1) {
 
 }
 
-pedido();
+
+
+// pedido();
 
 
 
