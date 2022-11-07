@@ -4,8 +4,7 @@ app.addEventListener("click", reinicio)
 
 
 function reinicio(params) {
-  
-  
+    
   class Hamburguesa {
     constructor(nombre, ingrediente, precio){
       this.nombre = nombre
