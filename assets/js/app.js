@@ -16,11 +16,6 @@ const añadiendo_productos =[];
 let app = document.getElementById("app");
 app.addEventListener("click", pedido)
 
-    function name (params) {
-      let cliente=prompt("Ingrese su Nombre por favor");
-      let dirección=prompt("Ingrese su dirección");
-      
-    }
 
 function pedido() {
   
